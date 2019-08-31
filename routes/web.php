@@ -11,11 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/', 'welcome');
 
-
+Route::get('clients', 'ClientsController@list');
 
 /*
 * 	Client
