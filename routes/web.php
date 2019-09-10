@@ -35,3 +35,7 @@ Route::get('clients', 'ClientsController@list');
 *	- Update Admin Details
 *
 */
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -1,7 +1,11 @@
-<h1>Clients</h1>
+@extends('core.layout')
 
-<ul>
-    @foreach( $clients as $client)
-        <li> {{ $client }} </li>
-    @endforeach
-</ul>
+@section('content')
+    <h1>Clients</h1>
+
+    <ul>
+        @foreach( $clients as $client)
+            <li> {{ $client }} </li>
+        @endforeach
+    </ul>
+@endsection
